@@ -1,0 +1,84 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.change{
+    position: relative;
+    margin: 30px;
+    border: 2px solid black;
+    height: 30px;
+    width: 55px;
+    background-color: hsl(210, 2%, 88%);
+    border-radius: 20px;
+}
+
+.inside{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    transform: scale(.6);
+    top: -7px;
+    left: -7px;
+    cursor: pointer;
+    transition: .6s ease-in;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.display{
+    min-height: 80px;
+    width: 94%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: right;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.buts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    height: 67px;
+    width: 67px;
+    border-radius: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: hsl(60, 7%, 94%);
+}
+
+.buts > *:not(:nth-last-child(-n+2)):hover {
+    background-color: hsl(60, 7%, 85%);
+}
+
+.buts > *:nth-last-child(-n+2):hover {    
+    background-color: hsl(0, 65%, 30%);
+}
+
+.red{
+    color: antiquewhite;
+    background-color: hsl(0, 65%, 40%);
+}
